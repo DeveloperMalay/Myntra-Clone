@@ -1,0 +1,180 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.container {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+/* navbar design starts here */
+
+.navbar {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  position: fixed;
+}
+.logo {
+  margin-top: 10px;
+  margin-left: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-list {
+  position: absolute;
+  left: 7vw;
+  top: 25px;
+  list-style-type: none;
+  
+}
+
+.nav-list li{
+  height: 80px;
+}
+
+ul.nav-list li {
+  display: inline-block;
+  padding-right: 25px;
+  margin-bottom: 20px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+li a sup {
+  color: red;
+}
+
+.menu-list {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 24px;
+  display: none;
+}
+
+.menu-list li {
+  display: block;
+}
+
+
+.item:hover {
+color: black;
+}
+
+.navigation li:hover .menu-list{
+  display: block;
+}
+
+
+
+#search {
+  margin-left: 18pt;
+  display: inline-block;
+  color: #696e79;
+  border: 1px solid #f5f5f6;
+  padding: 8px 10px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 365px;
+  text-overflow: "";
+  background-color: rgb(0 0 0 / 5%);
+}
+
+#search:focus {
+  background-color: #f5f5f6;
+}
+#search input {
+  outline: none;
+  border: none;
+  width: 300px;
+  padding-left: 5px;
+  background-color: transparent;
+}
+#search input:focus {
+  background-color: #f5f5f6;
+}
+
+.icons {
+  margin-left: 70vw;
+  float: right;
+  text-align: center;
+}
+.icon {
+  display: inline-block;
+  padding: 13px;
+  font-size: 20px;
+}
+
+.icon span {
+  display: block;
+  font-size: 10px;
+}
+
+/* navbar design ends here */
+
+/* banner Ads */
+.banner {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Carosoul starts here */
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
